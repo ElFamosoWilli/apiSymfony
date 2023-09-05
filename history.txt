@@ -1,0 +1,118 @@
+    1  sudo apt update 
+    2  sudo apt upgrade 
+    3  systemctl --user start docker-desktop
+    4  sudo groupadd docker
+    5  sudo usermod -aG docker $USER
+    6  git --version 
+    7  sudo apt install git-all
+    8  git --version 
+    9  sudo install -m 0755 -d /etc/apt/keyrings
+   10  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   11  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   12  echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   13    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   14  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   15  docker 
+   16  sudo apt-get update
+   17  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   18  sudo docker run hello-world
+   19  git config --global user.name
+   20  git config --global user.name ElFamosoWilli
+   21  git config --global user.email william_jaulin@yahoo.fr
+   22  git config -l 
+   23  ls
+   24  systemctl --user start docker-desktop
+   25  cd '/home/cd2groupea/Documents/Cours' 
+   26  ls
+   27  git init 
+   28  git commit -m "first commit"
+   29  git config --global user.email william_jaulin@yahoo.fr
+   30  git commit -m "first commit"
+   31  git branch -M main
+   32  git remote add origin https://github.com/ElFamosoWilli/CoursCfa.git
+   33  git push -u origin main
+   34  touch 1.txt
+   35  git add . 
+   36  git commit -m "ajout du premier fichier texte"
+   37  git push origin main 
+   38  git push -u origin main
+   39  systemctl --user start docker-desktop
+   40  docker ps 
+   41  ps aux | grep maria 
+   42  ps aux | grep mysql 
+   43  clear
+   44  docker exec -it monmaria /bin/bash 
+   45  docker compose 
+   46  docker -compose 
+   47  docker-compose 
+   48  sudo apt  install docker-compose
+   49  clear
+   50  docker-compose
+   51  cd '/home/cd2groupea/Documents/Cours/docker' 
+   52  cd dev
+   53  mkdir bdd && cd bdd 
+   54  ls 
+   55  code . 
+   56  history
+   
+   
+   
+   
+       1  sudo apt update 
+    2  sudo apt upgrade 
+    3  systemctl --user start docker-desktop
+    4  sudo groupadd docker
+    5  sudo usermod -aG docker $USER
+    6  git --version 
+    7  sudo apt install git-all
+    8  git --version 
+    9  sudo install -m 0755 -d /etc/apt/keyrings
+   10  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   11  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   12  echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   13    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   14  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   15  docker 
+   16  sudo apt-get update
+   17  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   18  sudo docker run hello-world
+   19  git config --global user.name
+   20  git config --global user.name ElFamosoWilli
+   21  git config --global user.email william_jaulin@yahoo.fr
+   22  git config -l 
+   23  ls
+   24  systemctl --user start docker-desktop
+   25  cd '/home/cd2groupea/Documents/Cours' 
+   26  ls
+   27  git init 
+   28  git commit -m "first commit"
+   29  git config --global user.email william_jaulin@yahoo.fr
+   30  git commit -m "first commit"
+   31  git branch -M main
+   32  git remote add origin https://github.com/ElFamosoWilli/CoursCfa.git
+   33  git push -u origin main
+   34  touch 1.txt
+   35  git add . 
+   36  git commit -m "ajout du premier fichier texte"
+   37  git push origin main 
+   38  git push -u origin main
+   39  systemctl --user start docker-desktop
+   40  docker ps 
+   41  ps aux | grep maria 
+   42  ps aux | grep mysql 
+   43  clear
+   44  docker exec -it monmaria /bin/bash 
+   45  docker compose 
+   46  docker -compose 
+   47  docker-compose 
+   48  sudo apt  install docker-compose
+   49  clear
+   50  docker-compose
+   51  cd '/home/cd2groupea/Documents/Cours/docker' 
+   52  cd dev
+   53  mkdir bdd && cd bdd 
+   54  ls 
+   55  code . 
+   56  history
+
+

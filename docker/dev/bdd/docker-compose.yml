@@ -1,0 +1,17 @@
+version: '3.2'
+services:
+  maria:
+    image: mariadb:latest
+    container_name: monmaria2
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin2023
+    volumes:
+      - ./files:/files
+      - mariaData:/var/lib/mysql
+
+volumes:
+  mariaData:
+  
+    

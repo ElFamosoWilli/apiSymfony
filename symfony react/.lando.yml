@@ -1,0 +1,26 @@
+name: api_symfony
+recipe: symfony
+config:
+  php: '8.1'
+  via: nginx
+  webroot: public
+services:
+  database:
+    type: mysql
+    portforward: 3307
+    creds:
+      user: william
+      password: admin
+      database: api_symfony
+  node:
+    type: node:14
+    build:
+      - yarn install
+      - npm install
+tooling:
+  yarn:
+    service: node
+  node:
+    service: node
+  npm:
+    service: node
